@@ -1,35 +1,35 @@
-import React from "react";
 import PeopleTemplate from "./PeopleTemplate";
-import { useState } from "react";
 import { useEffect } from "react";
+import { useState } from "react";
+
+
 
 const People = () => {
+  const [data, setData] = useState(null);
   useEffect(() => {
-    loadData();
-  }, []);
+   
 
-  const [data, setData] = useState([]);
-
-  const loadData = async () => {
-    await fetch("https://swapi.dev/api/people")
+    fetch("https://swapi.dev/api/people")
       .then((resp) => {
         return resp.json();
       })
       .then((receivedData) => {
-        setData(receivedData);
-      });
-  };
+        // PeopleTemplate(receivedData)
+        // return receivedData
+        console.log(receivedData)
+        setData(receivedData)
+        
+      })
+  }, []);
 
+  
+  console.log(data)
   return (
     <div>
-      {Object.values(data.results).map((item) => (
-        <div>
-          {/* <h3>{item}</h3> */}
-          <PeopleTemplate data={item} />
-        </div>
-      ))}
+      {data && <PeopleTemplate data={data}/> }
     </div>
-  );
-};
+  )
+}
+
 
 export default People;
