@@ -16,7 +16,6 @@ const People = () => {
       .then((receivedData) => {
         // PeopleTemplate(receivedData)
         // return receivedData
-        console.log(receivedData)
         setData(receivedData)
         
       })

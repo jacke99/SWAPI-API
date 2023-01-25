@@ -1,8 +1,5 @@
 const PeopleTemplate = (props) => {
-  console.log(props)
   props = props.data
-  console.log(props)
-
   return (
     <div>
       <h2>Characters!</h2>
