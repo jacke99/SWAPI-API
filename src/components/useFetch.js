@@ -1,25 +1,20 @@
-/* import { useState } from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 
 const useFetch = (url) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
 
   useEffect(() => {
-    loadData();
-  }, []);
-
-  const loadData = async () => {
-    await fetch(url)
+    fetch(url)
       .then((resp) => {
         return resp.json();
       })
-      .then((data) => {
-        // console.log(data);
-        setData(data);
+      .then((receivedData) => {
+        setData(receivedData);
       });
-  };
+  }, [url]);
 
   return { data };
 };
 
-export default useFetch; */
+export default useFetch;
