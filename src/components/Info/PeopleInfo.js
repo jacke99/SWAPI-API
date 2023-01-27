@@ -1,9 +1,9 @@
 import useFetch from "../useFetch";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const CharInfo = () => {
-  const { id } = useParams();
-  const { data } = useFetch(`https://swapi.dev/api/people/${id}`);
+  const location = useLocation();
+  const { data } = useFetch(location.state.item.url);
 
   return (
     <div>

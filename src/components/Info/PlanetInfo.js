@@ -1,9 +1,9 @@
 import useFetch from "../useFetch";
-import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const PlanetInfo = () => {
-  const { id } = useParams();
-  const { data } = useFetch(`https://swapi.dev/api/planets/${id}`);
+  const location = useLocation();
+  const { data } = useFetch(location.state.item.url);
 
   return (
     <div>
