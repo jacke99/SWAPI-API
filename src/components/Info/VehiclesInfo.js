@@ -5,10 +5,11 @@ const VehiclesInfo = () => {
   const location = useLocation();
   // const { item } = location.state.item;
 
-  const { data } = useFetch(location.state.item.url);
+  const { data, isPending } = useFetch(location.state.item.url);
 
   return (
     <div>
+      {isPending && <div className="pending">Loading...</div>}
       {data && (
         <div>
           <h1>{data.name}</h1>

@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: 'Roboto Serif', serif;
     width: 100%;
     height: 100vh;
 }
@@ -19,9 +20,65 @@ body {
 }
 
 .home-page{
-    background: url("./assets/lukas-denier-YiXsjwJKXmo-unsplash.jpg") no-repeat center center/ cover;
+    background: url("./assets/jake-weirick-Q_RBVFFXR_g-unsplash.jpg") no-repeat center center/ cover;
     height: 100vh;
     color: white;
+    position: relative;
+    z-index: -5;
+}
+
+.home-container {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 10em;
+    text-align: center;
+}
+
+.home-title {
+    font-size: 4em;
+    -webkit-text-stroke: 1px yellow;
+    color: transparent;
+}
+
+.home-content {
+    font-size: 1.5em;
+}
+
+.nav-title {
+}
+
+.home-navbar {
+    width: 200px;
+    
+    position: absolute;
+    margin: 0 auto;
+    top: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+.home-nav-list {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 7em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.home-nav-list-item {
+    border: 1px solid rgb(240, 255, 32);
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    color: rgb(240, 255, 32);
+    width: 8em;
+}
+
+.home-nav-list-item:hover {
+    background-color: rgb(240, 255, 32);
+    color: black;
 }
 
 .nav-list {
@@ -41,6 +98,17 @@ body {
 
 .card {
     text-align: center;
+}
+
+.pending {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 5em;
+}
+
+.error-msg {
+    text-align: center;
+    margin-top: 5em;
 }
 
 .btn-container {
@@ -89,9 +157,18 @@ body {
 
 .template-item-container {
     background-color: rgb(161, 161, 161);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     border-bottom: 1px solid black;
+    width: 60%;
+
+    margin: 0 auto;
 }
 .links {
     text-decoration: none;
     color: #111;
+}
+
+.home-btn {
+    display: none;
 }

@@ -7,19 +7,12 @@ import SpeciesInfo from "./components/Info/SpeciesInfo";
 import VehiclesInfo from "./components/Info/VehiclesInfo";
 import StarshipsInfo from "./components/Info/StarshipsInfo";
 import Menu from "./components/Menu";
-import { useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./style.css";
 
 function App() {
-  // const [active, setActive] = useState(false);
-
-  // const handleClick = () => {
-  //   setActive(true);
-  // };
-
   return (
     <Router>
       <NavBar />
@@ -31,9 +24,9 @@ function App() {
             path="/People"
             element={
               <Menu
-                category={"people"}
+                category={"/people"}
                 linkTo={"PeopleInfo"}
-                title={"Star Wars Character"}
+                title={"Star Wars Characters"}
                 header={"Characters"}
               />
             }
@@ -44,7 +37,7 @@ function App() {
             path="/Planets"
             element={
               <Menu
-                category={"planets"}
+                category={"/planets"}
                 linkTo={"PlanetInfo"}
                 title={"Star Wars Planets"}
                 header={"Planets"}
@@ -57,10 +50,10 @@ function App() {
             path="/Films"
             element={
               <Menu
-                category={"films"}
+                category={"/films"}
                 linkTo={"FilmInfo"}
-                title={"Star Wars Movies"}
-                header={"Movies"}
+                title={"Star Wars Films"}
+                header={"Films"}
               />
             }
           />
@@ -70,7 +63,7 @@ function App() {
             path="/Species"
             element={
               <Menu
-                category={"species"}
+                category={"/species"}
                 linkTo={"SpeciesInfo"}
                 title={"Star Wars Species"}
                 header={"Species"}
@@ -83,7 +76,7 @@ function App() {
             path="/Vehicles"
             element={
               <Menu
-                category={"vehicles"}
+                category={"/vehicles"}
                 linkTo={"VehiclesInfo"}
                 title={"Star Wars Vehicles"}
                 header={"Vehicles"}
@@ -96,7 +89,7 @@ function App() {
             path="/Starships"
             element={
               <Menu
-                category={"starships"}
+                category={"/starships"}
                 linkTo={"StarshipsInfo"}
                 title={"Star Wars Starships"}
                 header={"Starships"}

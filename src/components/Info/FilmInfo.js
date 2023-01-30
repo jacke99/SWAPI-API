@@ -3,11 +3,12 @@ import { useLocation } from "react-router-dom";
 
 const FilmInfo = () => {
   const location = useLocation();
-  const { data } = useFetch(location.state.item.url);
+  const { data, isPending } = useFetch(location.state.item.url);
 
   console.log(data);
   return (
     <div>
+      {isPending && <div className="pending">Loading...</div>}
       {data && (
         <div>
           <h1>{data.title}</h1>
