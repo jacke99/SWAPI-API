@@ -10,20 +10,25 @@ const NavBar = () => {
   const [listItemClassName, setListItemClassName] =
     useState("home-nav-list-item");
   const [toggleHomeBtn, setToggleHomeBtn] = useState("home-btn");
+  const [toggleContainer, setToggleContainer] = useState("");
 
   const showNav = () => {
     setNavBarClassName("navbar");
     setNavListClassName("nav-list");
     setListItemClassName("nav-list-item");
     setToggleHomeBtn("nav-title");
+    setToggleContainer("navbar-container");
   };
+
   const showHomeNav = () => {
     setNavBarClassName("home-navbar");
     setNavListClassName("home-nav-list");
     setListItemClassName("home-nav-list-item");
     setToggleHomeBtn("home-btn");
+    setToggleContainer("");
   };
 
+  //Renders correct nav if page is refreshed
   useEffect(() => {
     if (location.pathname === "/") {
       showHomeNav();
@@ -32,11 +37,8 @@ const NavBar = () => {
     }
   }, [location.pathname]);
 
-  //navbar
-  //nav-list
-  //nav-list-item
   return (
-    <div>
+    <div className={toggleContainer}>
       <nav className={navBarClassName}>
         <Link to={"/"} className="links" onClick={() => showHomeNav()}>
           <h3 className={toggleHomeBtn}>Home</h3>
@@ -44,7 +46,7 @@ const NavBar = () => {
 
         <ul className={navListClassName}>
           <Link to={"People"} className="links" onClick={() => showNav()}>
-            <li className={listItemClassName}>People</li>
+            <li className={listItemClassName}>Characters </li>
           </Link>
 
           <Link to={"Planets"} className="links" onClick={() => showNav()}>
@@ -67,6 +69,7 @@ const NavBar = () => {
             <li className={listItemClassName}>Starships</li>
           </Link>
         </ul>
+        <div className="empty-div"></div>
       </nav>
     </div>
   );
