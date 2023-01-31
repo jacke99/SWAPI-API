@@ -1,6 +1,6 @@
 import useFetch from "../useFetch";
 import { useLocation } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import planetsBackground from "../../assets/nasa-Q1p7bh3SHj8-unsplash.jpg";
 
 const PlanetInfo = () => {
@@ -32,6 +32,9 @@ const PlanetInfo = () => {
             <p>Diameter: {data.diameter}</p>
             <p>Orbital Period: {data.orbital_period}</p>
             <p>Rotation Period: {data.rotation_period}</p>
+            <Link to={"/planets"}>
+              <button className="close-btn">Close</button>
+            </Link>
           </div>
         </div>
       )}

@@ -1,6 +1,7 @@
 import useFetch from "../useFetch";
 import { useLocation } from "react-router-dom";
 import starshipsBackground from "../../assets/josue-as-_nprTIIwSk4-unsplash.jpg";
+import { Link } from "react-router-dom";
 
 const StarshipsInfo = () => {
   const location = useLocation();
@@ -35,7 +36,9 @@ const StarshipsInfo = () => {
             <p>Hyperdrive rating: {data.hyperdrive_rating}</p>
             <p>MGLT: {data.MGLT}</p>
             <p>Starship class: {data.starship_class}</p>
-            <p>{}</p>
+            <Link to={"/starships"}>
+              <button className="close-btn">Close</button>
+            </Link>
           </div>
         </div>
       )}

@@ -1,6 +1,7 @@
 import useFetch from "../useFetch";
 import { useLocation } from "react-router-dom";
 import peopleBackground from "../../assets/venti-views-35uZM_4wjYg-unsplash.jpg";
+import { Link } from "react-router-dom";
 
 const CharInfo = () => {
   const location = useLocation();
@@ -31,6 +32,9 @@ const CharInfo = () => {
             <p>Skin color: {data.skin_color}</p>
             <p>Height: {data.height}</p>
             <p>Weight: {data.mass}</p>
+            <Link to={"/people"}>
+              <button className="close-btn">Close</button>
+            </Link>
           </div>
         </div>
       )}

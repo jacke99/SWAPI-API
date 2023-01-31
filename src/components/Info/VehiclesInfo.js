@@ -1,11 +1,10 @@
 import useFetch from "../useFetch";
 import { useLocation } from "react-router-dom";
 import vehiclesBackground from "../../assets/chuck-givens-02AQdLh4gP4-unsplash.jpg";
+import { Link } from "react-router-dom";
 
 const VehiclesInfo = () => {
   const location = useLocation();
-  // const { item } = location.state.item;
-
   const { data, isPending } = useFetch(location.state.item.url);
 
   return (
@@ -35,6 +34,9 @@ const VehiclesInfo = () => {
             <p>Passengers: {data.passengers}</p>
             <p>Cargo capacity: {data.cargo_capacity}</p>
             <p>Vehicle class: {data.vehicle_class}</p>
+            <Link to={"/vehicles"}>
+              <button className="close-btn">Close</button>
+            </Link>
           </div>
         </div>
       )}

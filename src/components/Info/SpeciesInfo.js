@@ -1,6 +1,7 @@
 import useFetch from "../useFetch";
 import { useLocation } from "react-router-dom";
 import speciesBackground from "../../assets/lukas-denier-YiXsjwJKXmo-unsplash.jpg";
+import { Link } from "react-router-dom";
 
 const SpeciesInfo = () => {
   const location = useLocation();
@@ -32,6 +33,9 @@ const SpeciesInfo = () => {
             <p>Hair colors: {data.hair_colors}</p>
             <p>Eye colors: {data.eye_colors}</p>
             <p>Average lifespan: {data.average_lifespan}</p>
+            <Link to={"/species"}>
+              <button className="close-btn">Close</button>
+            </Link>
           </div>
         </div>
       )}
