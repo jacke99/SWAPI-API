@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-import useFetch from "./useFetch";
-import { useState } from "react";
 
 const Template = (props) => {
-  const [input, setInput] = useState("");
   let id = 0;
 
   if (props.pageNumber === 1) {
@@ -12,10 +9,8 @@ const Template = (props) => {
     id = props.pageNumber * 10 - 10;
   }
 
-  //console.log("input: ", input);
-
   return (
-    <div>
+    <div className="template-container">
       {props.data.results.map((item) => {
         id++;
         return (

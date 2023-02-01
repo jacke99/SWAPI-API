@@ -7,6 +7,7 @@ import SpeciesInfo from "./components/Info/SpeciesInfo";
 import VehiclesInfo from "./components/Info/VehiclesInfo";
 import StarshipsInfo from "./components/Info/StarshipsInfo";
 import Menu from "./components/Menu";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ import "./style.css";
 function App() {
   return (
     <Router>
+      <HamburgerMenu />
       <NavBar />
       <div className="App">
         <Routes>
