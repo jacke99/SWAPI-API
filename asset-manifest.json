@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f77c4e4.css",
-    "main.js": "/static/js/main.f3e9c502.js",
-    "static/media/josue-as-_nprTIIwSk4-unsplash.jpg": "/static/media/josue-as-_nprTIIwSk4-unsplash.4ac5f23929efa340a1e9.jpg",
-    "static/media/chuck-givens-02AQdLh4gP4-unsplash.jpg": "/static/media/chuck-givens-02AQdLh4gP4-unsplash.99894326e373075b3243.jpg",
-    "static/media/michael-marais-JLHyIwix46c-unsplash.jpg": "/static/media/michael-marais-JLHyIwix46c-unsplash.7ab6ef1b8eae2d257d5d.jpg",
-    "static/media/venti-views-35uZM_4wjYg-unsplash.jpg": "/static/media/venti-views-35uZM_4wjYg-unsplash.976c3434725de15fc52c.jpg",
-    "static/media/lukas-denier-YiXsjwJKXmo-unsplash.jpg": "/static/media/lukas-denier-YiXsjwJKXmo-unsplash.b51d7f78db65f9f08f99.jpg",
-    "static/media/space-1164579.png": "/static/media/space-1164579.5dbae0be041400a83eda.png",
-    "static/media/nasa-Q1p7bh3SHj8-unsplash.jpg": "/static/media/nasa-Q1p7bh3SHj8-unsplash.de5659898d3bfc5eb8ea.jpg",
-    "index.html": "/index.html",
-    "main.5f77c4e4.css.map": "/static/css/main.5f77c4e4.css.map",
-    "main.f3e9c502.js.map": "/static/js/main.f3e9c502.js.map"
+    "main.css": "/SWAPI-API/static/css/main.19a1d15d.css",
+    "main.js": "/SWAPI-API/static/js/main.cb8212c3.js",
+    "static/media/josue-as-_nprTIIwSk4-unsplash.jpg": "/SWAPI-API/static/media/josue-as-_nprTIIwSk4-unsplash.4ac5f23929efa340a1e9.jpg",
+    "static/media/chuck-givens-02AQdLh4gP4-unsplash.jpg": "/SWAPI-API/static/media/chuck-givens-02AQdLh4gP4-unsplash.99894326e373075b3243.jpg",
+    "static/media/michael-marais-JLHyIwix46c-unsplash.jpg": "/SWAPI-API/static/media/michael-marais-JLHyIwix46c-unsplash.7ab6ef1b8eae2d257d5d.jpg",
+    "static/media/venti-views-35uZM_4wjYg-unsplash.jpg": "/SWAPI-API/static/media/venti-views-35uZM_4wjYg-unsplash.976c3434725de15fc52c.jpg",
+    "static/media/lukas-denier-YiXsjwJKXmo-unsplash.jpg": "/SWAPI-API/static/media/lukas-denier-YiXsjwJKXmo-unsplash.b51d7f78db65f9f08f99.jpg",
+    "static/media/space-1164579.png": "/SWAPI-API/static/media/space-1164579.5dbae0be041400a83eda.png",
+    "static/media/nasa-Q1p7bh3SHj8-unsplash.jpg": "/SWAPI-API/static/media/nasa-Q1p7bh3SHj8-unsplash.de5659898d3bfc5eb8ea.jpg",
+    "index.html": "/SWAPI-API/index.html",
+    "main.19a1d15d.css.map": "/SWAPI-API/static/css/main.19a1d15d.css.map",
+    "main.cb8212c3.js.map": "/SWAPI-API/static/js/main.cb8212c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f77c4e4.css",
-    "static/js/main.f3e9c502.js"
+    "static/css/main.19a1d15d.css",
+    "static/js/main.cb8212c3.js"
   ]
 }
