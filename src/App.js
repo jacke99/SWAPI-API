@@ -20,23 +20,26 @@ function App() {
       <NavBar />
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/SWAPI-API" element={<Home />} />
 
           <Route
-            path="/People"
+            path="/SWAPI-API/Characters"
             element={
               <Menu
                 category={"/people"}
-                linkTo={"PeopleInfo"}
+                linkTo={"CharacterInfo"}
                 title={"Star Wars Characters"}
                 header={"Characters"}
               />
             }
           />
-          <Route path="/PeopleInfo/:id" element={<PeopleInfo />} />
+          <Route
+            path="/SWAPI-API/Characters/Characterinfo/:id"
+            element={<PeopleInfo />}
+          />
 
           <Route
-            path="/Planets"
+            path="/SWAPI-API/Planets"
             element={
               <Menu
                 category={"/planets"}
@@ -46,10 +49,13 @@ function App() {
               />
             }
           />
-          <Route path="/PlanetInfo/:id" element={<PlanetInfo />} />
+          <Route
+            path="/SWAPI-API/Planets/PlanetInfo/:id"
+            element={<PlanetInfo />}
+          />
 
           <Route
-            path="/Films"
+            path="/SWAPI-API/Films"
             element={
               <Menu
                 category={"/films"}
@@ -59,10 +65,10 @@ function App() {
               />
             }
           />
-          <Route path="/FilmInfo/:id" element={<FilmInfo />} />
+          <Route path="/SWAPI-API/Films/FilmInfo/:id" element={<FilmInfo />} />
 
           <Route
-            path="/Species"
+            path="/SWAPI-API/Species"
             element={
               <Menu
                 category={"/species"}
@@ -72,10 +78,13 @@ function App() {
               />
             }
           />
-          <Route path="/SpeciesInfo/:id" element={<SpeciesInfo />} />
+          <Route
+            path="/SWAPI-API/Species/SpeciesInfo/:id"
+            element={<SpeciesInfo />}
+          />
 
           <Route
-            path="/Vehicles"
+            path="/SWAPI-API/Vehicles"
             element={
               <Menu
                 category={"/vehicles"}
@@ -85,10 +94,13 @@ function App() {
               />
             }
           />
-          <Route path="/VehiclesInfo/:id" element={<VehiclesInfo />} />
+          <Route
+            path="/SWAPI-API/Vehicles/VehiclesInfo/:id"
+            element={<VehiclesInfo />}
+          />
 
           <Route
-            path="/Starships"
+            path="/SWAPI-API/Starships"
             element={
               <Menu
                 category={"/starships"}
@@ -98,7 +110,10 @@ function App() {
               />
             }
           />
-          <Route path="/StarshipsInfo/:id" element={<StarshipsInfo />} />
+          <Route
+            path="/SWAPI-API/Starships/StarshipsInfo/:id"
+            element={<StarshipsInfo />}
+          />
         </Routes>
       </div>
     </Router>

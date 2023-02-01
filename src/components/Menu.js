@@ -52,9 +52,8 @@ const Menu = (props) => {
     if (!input) {
       setApi(`https://swapi.dev/api${props.category}/?page=${pageNumber}`);
     } else {
-      setApi(
-        `https://swapi.dev/api${props.category}/?search=${input}&page=${pageNumber}`
-      );
+      setApi(`https://swapi.dev/api${props.category}/?search=${input}&page=1`);
+      setPageNumber(1);
     }
   }, [input, pageNumber, props.category]);
 

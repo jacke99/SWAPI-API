@@ -31,7 +31,7 @@ const FilmInfo = () => {
             <p>Episodes: {data.episode_id}</p>
             <p>Director: {data.director}</p>
             <p>Producers: {data.producer}</p>
-            <Link to={"/films"} className="close-btn">
+            <Link to={"/SWAPI-API/Films"} className="close-btn">
               Close
             </Link>
           </div>

@@ -8,22 +8,22 @@ const HamburgerMenu = () => {
       <a className="menu-item" href="/">
         Home
       </a>
-      <a className="menu-item" href="/people">
+      <a className="menu-item" href="/People">
         Characters
       </a>
-      <a className="menu-item" href="/planets">
+      <a className="menu-item" href="/Planets">
         Planets
       </a>
-      <a className="menu-item" href="/films">
+      <a className="menu-item" href="/Films">
         Films
       </a>
-      <a className="menu-item" href="/species">
+      <a className="menu-item" href="/Species">
         Species
       </a>
-      <a className="menu-item" href="/vehicles">
+      <a className="menu-item" href="/Vehicles">
         Vehicles
       </a>
-      <a className="menu-item" href="/starships">
+      <a className="menu-item" href="/Starships">
         Starships
       </a>
     </Menu>

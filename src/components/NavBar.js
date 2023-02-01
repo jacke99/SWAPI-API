@@ -30,7 +30,7 @@ const NavBar = () => {
 
   //Renders correct nav if page is refreshed
   useEffect(() => {
-    if (location.pathname === "/") {
+    if (location.pathname === "/SWAPI-API") {
       showHomeNav();
     } else {
       showNav();
@@ -40,32 +40,50 @@ const NavBar = () => {
   return (
     <div className={toggleContainer}>
       <nav className={navBarClassName}>
-        <Link to={"/"} className="links" onClick={() => showHomeNav()}>
+        <Link to={"/SWAPI-API"} className="links" onClick={() => showHomeNav()}>
           <h3 className={toggleHomeBtn}>Home</h3>
         </Link>
 
         <ul className={navListClassName}>
-          <Link to={"People"} className="links" onClick={() => showNav()}>
+          <Link
+            to={"/SWAPI-API/Characters"}
+            className="links"
+            onClick={() => showNav()}>
             <li className={listItemClassName}>Characters </li>
           </Link>
 
-          <Link to={"Planets"} className="links" onClick={() => showNav()}>
+          <Link
+            to={"/SWAPI-API/Planets"}
+            className="links"
+            onClick={() => showNav()}>
             <li className={listItemClassName}>Planets</li>
           </Link>
 
-          <Link to={"Films"} className="links" onClick={() => showNav()}>
+          <Link
+            to={"/SWAPI-API/Films"}
+            className="links"
+            onClick={() => showNav()}>
             <li className={listItemClassName}>Films</li>
           </Link>
 
-          <Link to={"Species"} className="links" onClick={() => showNav()}>
+          <Link
+            to={"/SWAPI-API/Species"}
+            className="links"
+            onClick={() => showNav()}>
             <li className={listItemClassName}>Species</li>
           </Link>
 
-          <Link to={"Vehicles"} className="links" onClick={() => showNav()}>
+          <Link
+            to={"/SWAPI-API/Vehicles"}
+            className="links"
+            onClick={() => showNav()}>
             <li className={listItemClassName}>Vehicles</li>
           </Link>
 
-          <Link to={"Starships"} className="links" onClick={() => showNav()}>
+          <Link
+            to={"/SWAPI-API/Starships"}
+            className="links"
+            onClick={() => showNav()}>
             <li className={listItemClassName}>Starships</li>
           </Link>
         </ul>

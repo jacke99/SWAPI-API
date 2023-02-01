@@ -33,7 +33,7 @@ const SpeciesInfo = () => {
             <p>Hair colors: {data.hair_colors}</p>
             <p>Eye colors: {data.eye_colors}</p>
             <p>Average lifespan: {data.average_lifespan}</p>
-            <Link to={"/species"} className="close-btn">
+            <Link to={"/SWAPI-API/Species"} className="close-btn">
               Close
             </Link>
           </div>
