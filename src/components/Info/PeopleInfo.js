@@ -32,7 +32,7 @@ const CharInfo = () => {
             <p>Skin color: {data.skin_color}</p>
             <p>Height: {data.height}</p>
             <p>Weight: {data.mass}</p>
-            <Link to={"/people"} className="close-btn">
+            <Link to={"/SWAPI-API/Characters"} className="close-btn">
               Close
             </Link>
           </div>

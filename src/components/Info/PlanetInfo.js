@@ -32,7 +32,7 @@ const PlanetInfo = () => {
             <p>Diameter: {data.diameter}</p>
             <p>Orbital Period: {data.orbital_period}</p>
             <p>Rotation Period: {data.rotation_period}</p>
-            <Link to={"/planets"} className="close-btn">
+            <Link to={"/SWAPI-API/Planets"} className="close-btn">
               Close
             </Link>
           </div>

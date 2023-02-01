@@ -36,7 +36,7 @@ const StarshipsInfo = () => {
             <p>Hyperdrive rating: {data.hyperdrive_rating}</p>
             <p>MGLT: {data.MGLT}</p>
             <p>Starship class: {data.starship_class}</p>
-            <Link to={"/starships"} className="close-btn">
+            <Link to={"/SWAPI-API/Starships"} className="close-btn">
               Close
             </Link>
           </div>

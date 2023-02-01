@@ -34,7 +34,7 @@ const VehiclesInfo = () => {
             <p>Passengers: {data.passengers}</p>
             <p>Cargo capacity: {data.cargo_capacity}</p>
             <p>Vehicle class: {data.vehicle_class}</p>
-            <Link to={"/vehicles"} className="close-btn">
+            <Link to={"/SWAPI-API/Vehicles"} className="close-btn">
               Close
             </Link>
           </div>
