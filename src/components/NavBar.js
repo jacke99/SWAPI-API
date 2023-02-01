@@ -32,6 +32,8 @@ const NavBar = () => {
   useEffect(() => {
     if (location.pathname === "/SWAPI-API") {
       showHomeNav();
+    } else if (location.pathname === "/SWAPI-API/") {
+      showHomeNav();
     } else {
       showNav();
     }
