@@ -33,8 +33,8 @@ const SpeciesInfo = () => {
             <p>Hair colors: {data.hair_colors}</p>
             <p>Eye colors: {data.eye_colors}</p>
             <p>Average lifespan: {data.average_lifespan}</p>
-            <Link to={"/species"}>
-              <button className="close-btn">Close</button>
+            <Link to={"/species"} className="close-btn">
+              Close
             </Link>
           </div>
         </div>

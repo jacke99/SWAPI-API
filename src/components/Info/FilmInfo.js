@@ -31,8 +31,8 @@ const FilmInfo = () => {
             <p>Episodes: {data.episode_id}</p>
             <p>Director: {data.director}</p>
             <p>Producers: {data.producer}</p>
-            <Link to={"/films"}>
-              <button className="close-btn">Close</button>
+            <Link to={"/films"} className="close-btn">
+              Close
             </Link>
           </div>
         </div>

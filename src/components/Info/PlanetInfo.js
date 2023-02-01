@@ -32,8 +32,8 @@ const PlanetInfo = () => {
             <p>Diameter: {data.diameter}</p>
             <p>Orbital Period: {data.orbital_period}</p>
             <p>Rotation Period: {data.rotation_period}</p>
-            <Link to={"/planets"}>
-              <button className="close-btn">Close</button>
+            <Link to={"/planets"} className="close-btn">
+              Close
             </Link>
           </div>
         </div>

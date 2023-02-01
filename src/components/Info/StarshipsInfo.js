@@ -36,8 +36,8 @@ const StarshipsInfo = () => {
             <p>Hyperdrive rating: {data.hyperdrive_rating}</p>
             <p>MGLT: {data.MGLT}</p>
             <p>Starship class: {data.starship_class}</p>
-            <Link to={"/starships"}>
-              <button className="close-btn">Close</button>
+            <Link to={"/starships"} className="close-btn">
+              Close
             </Link>
           </div>
         </div>

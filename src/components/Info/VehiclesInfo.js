@@ -34,8 +34,8 @@ const VehiclesInfo = () => {
             <p>Passengers: {data.passengers}</p>
             <p>Cargo capacity: {data.cargo_capacity}</p>
             <p>Vehicle class: {data.vehicle_class}</p>
-            <Link to={"/vehicles"}>
-              <button className="close-btn">Close</button>
+            <Link to={"/vehicles"} className="close-btn">
+              Close
             </Link>
           </div>
         </div>

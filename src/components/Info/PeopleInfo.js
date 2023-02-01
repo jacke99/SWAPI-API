@@ -32,8 +32,8 @@ const CharInfo = () => {
             <p>Skin color: {data.skin_color}</p>
             <p>Height: {data.height}</p>
             <p>Weight: {data.mass}</p>
-            <Link to={"/people"}>
-              <button className="close-btn">Close</button>
+            <Link to={"/people"} className="close-btn">
+              Close
             </Link>
           </div>
         </div>
