@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5f77c4e4.css",
-    "main.js": "/static/js/main.731fd804.js",
+    "main.js": "/static/js/main.f3e9c502.js",
     "static/media/josue-as-_nprTIIwSk4-unsplash.jpg": "/static/media/josue-as-_nprTIIwSk4-unsplash.4ac5f23929efa340a1e9.jpg",
     "static/media/chuck-givens-02AQdLh4gP4-unsplash.jpg": "/static/media/chuck-givens-02AQdLh4gP4-unsplash.99894326e373075b3243.jpg",
     "static/media/michael-marais-JLHyIwix46c-unsplash.jpg": "/static/media/michael-marais-JLHyIwix46c-unsplash.7ab6ef1b8eae2d257d5d.jpg",
@@ -11,10 +11,10 @@
     "static/media/nasa-Q1p7bh3SHj8-unsplash.jpg": "/static/media/nasa-Q1p7bh3SHj8-unsplash.de5659898d3bfc5eb8ea.jpg",
     "index.html": "/index.html",
     "main.5f77c4e4.css.map": "/static/css/main.5f77c4e4.css.map",
-    "main.731fd804.js.map": "/static/js/main.731fd804.js.map"
+    "main.f3e9c502.js.map": "/static/js/main.f3e9c502.js.map"
   },
   "entrypoints": [
     "static/css/main.5f77c4e4.css",
-    "static/js/main.731fd804.js"
+    "static/js/main.f3e9c502.js"
   ]
 }
