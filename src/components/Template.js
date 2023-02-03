@@ -17,8 +17,9 @@ const Template = (props) => {
           <Link
             className="links"
             to={`/SWAPI-API/${props.header}/${props.linkTo}/${id}`}
-            state={{ item: item }}>
-            <div key={id} className="template-item-container">
+            state={{ item: item }}
+            key={id}>
+            <div className="template-item-container">
               {item.name && (
                 <h3 className="template-title-name">{item.name}</h3>
               )}

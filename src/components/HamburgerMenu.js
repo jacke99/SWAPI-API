@@ -1,31 +1,32 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import { Link } from "react-router-dom";
 import "./HamburgerMenu.css";
 
 const HamburgerMenu = () => {
   return (
     <Menu right width={"13em"}>
-      <a className="menu-item" href="/SWAPI-API">
+      <Link to={"/SWAPI-API"} className="menu-item">
         Home
-      </a>
-      <a className="menu-item" href="/SWAPI-API/Characters">
+      </Link>
+      <Link to={"/SWAPI-API/Characters"} className="menu-item">
         Characters
-      </a>
-      <a className="menu-item" href="/SWAPI-API/Planets">
+      </Link>
+      <Link to={"/SWAPI-API/Planets"} className="menu-item">
         Planets
-      </a>
-      <a className="menu-item" href="/SWAPI-API/Films">
+      </Link>
+      <Link to={"/SWAPI-API/Films"} className="menu-item">
         Films
-      </a>
-      <a className="menu-item" href="/SWAPI-API/Species">
+      </Link>
+      <Link to={"/SWAPI-API/Species"} className="menu-item">
         Species
-      </a>
-      <a className="menu-item" href="/SWAPI-API/Vehicles">
+      </Link>
+      <Link to={"/SWAPI-API/Vehicles"} className="menu-item">
         Vehicles
-      </a>
-      <a className="menu-item" href="/SWAPI-API/Starships">
+      </Link>
+      <Link to={"/SWAPI-API/Starships"} className="menu-item">
         Starships
-      </a>
+      </Link>
     </Menu>
   );
 };
