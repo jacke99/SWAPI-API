@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 const Template = (props) => {
   let id = 0;
 
+  //Calculates the correct page number
   if (props.pageNumber === 1) {
     id = 0;
   } else {

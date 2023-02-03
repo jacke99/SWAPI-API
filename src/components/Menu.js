@@ -22,6 +22,7 @@ const Menu = (props) => {
 
   const { data, isPending, error } = useFetch(api);
 
+  //Handles enter klick on searchbar
   const handleInput = (e) => {
     if (e.key === "Enter") {
       setInput(e.target.value);
@@ -29,6 +30,7 @@ const Menu = (props) => {
     }
   };
 
+  //Resets page number/input and set background img
   useEffect(() => {
     setPageNumber(1);
     setInput(false);
@@ -47,7 +49,7 @@ const Menu = (props) => {
     }
   }, [location, props.category]);
 
-  //Fetches API data and search API data if input = true
+  //Fetches API data/fetch search API data if input = true
   useEffect(() => {
     if (!input) {
       setApi(`https://swapi.dev/api${props.category}/?page=${pageNumber}`);
@@ -70,7 +72,7 @@ const Menu = (props) => {
     }
   }, [data]);
 
-  //Disables - page btn if on page 1
+  //Disables previous page btn if on page 1
   useEffect(() => {
     if (pageNumber === 1) {
       setIsDisabled(true);
@@ -79,7 +81,7 @@ const Menu = (props) => {
     }
   }, [pageNumber]);
 
-  //Disables + page btn if on last page
+  //Disables next page btn if on last page
   useEffect(() => {
     if (pageNumber === numberOfPages) {
       setIsNextDisabled(true);
